@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*image de mon arrière plan, page 1*/
@@ -24,7 +26,7 @@ body {
 }
 
 /*Paillettes*/
-.glitter-layer {
+.glitterLayer {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +39,7 @@ body {
     overflow: hidden;
 }
 
-.glitter-dot {
+.glitterDot {
     position: absolute;
     width: 2px;
     height: 2px;
@@ -117,7 +119,7 @@ h1 {
 }
 
 /*texte*/
-.banner-text {
+.bannerText {
     font-family: "Poiret One", sans-serif;
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
@@ -269,7 +271,7 @@ h1 {
     /*pour ajouter de l'espace*/
 }
 
-/*titre de mes projets*/
+/*titre de mes projets + lien vers projet*/
 .projectTitle {
     font-family: "Montserrat Underline", sans-serif;
     font-weight: 400;
@@ -279,6 +281,12 @@ h1 {
     display: flex;
     font-size: 1.45rem;
     margin-bottom: 5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.projectTitle:hover {
+    color: rgba(48, 236, 224, 0.9);
 }
 
 /*Alignement de mes projets : centrage*/
@@ -346,7 +354,7 @@ h1 {
 }
 
 /* Style pour les images dans les projets */
-.project-image img {
+.projectImage img {
     max-width: 100%;
     /*Limite la largeur maximale de l'image au conteneur*/
     height: auto;
@@ -364,9 +372,41 @@ h1 {
     /*arrière plan des photos*/
 }
 
+
+/******************************************/
+/*BLOOM BEATS*/
+
+/* Vidéo responsive */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/*paragraphe, page 1 et 2*/
+.paragraphTwo {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Cabin", sans-serif;
+    z-index: 1;
+    font-feature-settings: "ss01";
+    font-variant-alternates: styleset(ss01);
+    /* Stylistic set 1 on, high-level */
+}
+
+
 /*DESIGN RESPONSIVE : MEDIAS QUERIES*/
 @media screen and (max-width: 600px) {
-    .project-image img {
+    .projectImage img {
         max-width: 80%;
         /* Réduire la taille des images sur les petits écrans */
     }

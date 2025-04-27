@@ -1,11 +1,11 @@
 //EFFET PAILLETE
 document.addEventListener("DOMContentLoaded", function () {
-  const glitterLayer = document.querySelector(".glitter-layer");
+  const glitterLayer = document.querySelector(".glitterLayer");
   const numDots = 150; // Nombre de paillettes
 
   for (let i = 0; i < numDots; i++) {
     const dot = document.createElement("div");
-    dot.classList.add("glitter-dot");
+    dot.classList.add("glitterDot");
 
     // Position aléatoire
     dot.style.top = Math.random() * 100 + "%";

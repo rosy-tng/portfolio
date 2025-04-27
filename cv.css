@@ -3,6 +3,7 @@ body {
     height: 100%;
 }
 
+/*image de mon arrière plan, page 1*/
 .backgroundImage {
     background-image: url('test.png');
     background-size: cover;
@@ -14,7 +15,7 @@ body {
     z-index: -1;
 }
 
-
+/*arrière plan de la page 2*/
 .back {
     background-color: #333;
     width: 100%;
@@ -22,165 +23,7 @@ body {
     z-index: 1;
 }
 
-.body:after {
-    display: none !important;
-}
-
-/*Prénom et nom*/
-h1 {
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    display: flex;
-    font-family: "Montserrat Underline", sans-serif;
-    font-size: 3rem;
-    text-shadow: 4px 4px rgba(255, 255, 255, 0.1);
-}
-
-/*Titre de mes projets*/
-.myProjects {
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    display: flex;
-    flex: 2;
-    font-family: "Montserrat Underline", sans-serif;
-    font-size: 3rem;
-    text-shadow: 4px 4px rgba(255, 255, 255, 0.1);
-}
-
-/*Sous-titre pour : Conceptrice et Développeuse d'Applications*/
-.group {
-    display: block;
-    /* prendre toute la largeur */
-    width: 100%;
-    text-align: center;
-    /* centrer le texte */
-    font-size: 2rem;
-    font-family: "Poiret One", sans-serif;
-    color: rgb(255, 255, 255);
-    margin-top: 3rem;
-    /*espace haut*/
-    margin-bottom: 4rem;
-    /*espace en bas*/
-}
-
-/*Titre : mes projets personnels et proj6ets en groupe*/
-.solo {
-    font-family: "Poiret One", sans-serif;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
-    display: flex;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-/*ma photo*/
-.photo {
-    display: block;
-    width: 175px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    z-index: 0;
-    transform: translateX(-50%);
-    /*photo reste au centre*/
-}
-
-/*titre de mes projets*/
-.projectTitle {
-    font-family: "Montserrat Underline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgba(29, 90, 86, 0.9);
-    justify-content: center;
-    display: flex;
-    font-size: 1.45rem;
-    margin-bottom: 5rem;
-}
-
-/*Entre chaque photo*/
-.underPic {
-    flex: 1;
-    /*pour ajouter de l'espace*/
-}
-
-/*Titre du lien : mon portfolio*/
-.monPortfolio {
-    display: flex;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    font-family: "Montserrat Underline", sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    background-color: rgba(252, 232, 251, 0.7);
-    padding: 10px 10px;
-    width: 100%;
-    margin: 1.5rem auto;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-    text-decoration: none;
-    /*enlèvement du soulignement*/
-}
-
-.centered {
-    display: flex;
-    margin-top: 15rem;
-    text-justify: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-}
-
-.banner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255);
-    padding: 20px 30px;
-    /*pour réduire l'espace des deux côtés*/
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    width: 50%;
-    /*réduit sur les côtés*/
-    margin: auto;
-    z-index: 1;
-}
-
-/* Effet pailleté animation */
-@keyframes glitter {
-    0% {
-        opacity: 0.7;
-    }
-
-    25% {
-        opacity: 0.1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    75% {
-        opacity: 0.1;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
-}
-
+/*Paillettes*/
 .glitter-layer {
     position: absolute;
     top: 0;
@@ -204,7 +47,7 @@ h1 {
     animation: glitter 3s infinite ease-in-out;
 }
 
-/* Animation de scintillement */
+/* Animation des paillettes*/
 @keyframes glitter {
     0% {
         opacity: 0.8;
@@ -227,6 +70,51 @@ h1 {
     }
 }
 
+/*Police : Prénom et nom, page 1*/
+h1 {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    font-family: "Montserrat Underline", sans-serif;
+    font-size: 3rem;
+    text-shadow: 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*encadré blanc, page 1*/
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255);
+    padding: 20px 30px;
+    /*pour réduire l'espace des deux côtés*/
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    /*réduit sur les côtés*/
+    margin: auto;
+    z-index: 1;
+}
+
+/*ma photo*/
+.photo {
+    display: block;
+    width: 175px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    transform: translateX(-50%);
+    /*photo reste au centre de la page*/
+}
 
 /*texte*/
 .banner-text {
@@ -241,7 +129,7 @@ h1 {
     padding-left: 2rem;
 }
 
-/*paragraphe*/
+/*paragraphe, page 1 et 2*/
 .paragraph {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -252,89 +140,7 @@ h1 {
     /* Stylistic set 1 on, high-level */
 }
 
-@supports (font-variant-numeric: diagonal-fractions) {
-    .fraction {
-        font-feature-settings: normal;
-        /* Reset the low level, then... */
-        font-variant-numeric: diagonal-fractions;
-        /* ... use the better code */
-    }
-}
-
-.dragonfly {
-    position: absolute;
-    bottom: 36rem;
-    width: 100px;
-    height: auto;
-    z-index: 2;
-    pointer-events: none;
-    left: 65%;
-    display: flex;
-}
-
-.openBtn {
-    background-color: rgb(0, 0, 0);
-    border-radius: 0.95rem;
-    border-color: rgba(136, 172, 193, 0.6);
-    border: 2px solid rgba(136, 172, 193, 0.6);
-    padding: 20px 40px;
-    /*longueur et hauteur de mon bouton*/
-    margin-top: 0.5rem;
-    margin-left: 2rem;
-    font-family: 'Poiret One', sans-serif;
-    cursor: pointer;
-    z-index: 1;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-.openBtn:hover {
-    background-color: white;
-    border-radius: 0.95rem;
-    border: 2px solid rgb(1, 1, 1);
-    padding: 20px 40px;
-    /*structure de mon bouton*/
-    margin-top: 12rem;
-    font-family: 'Poiret One', sans-serif;
-    cursor: pointer;
-    flex-shrink: 0;
-    z-index: 1;
-}
-
-.homeBtn {
-    top: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    margin: 10px;
-    font-family: 'Poiret One', sans-serif;
-    font-size: 2.5rem;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 20px;
-    background-color: rgba(252, 232, 251);
-    cursor: pointer;
-    z-index: 2;
-    display: inline-block;
-    font-weight: 400;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-    text-decoration: none;
-}
-
-
-.homeBtn:hover {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.05);
-}
-
-/*mes icônes de contact*/
-.button {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 24
-}
-
+/*Boutons de contact ou de projets*/
 .boutton {
     display: flex;
     justify-content: center;
@@ -355,29 +161,147 @@ h1 {
     transform: scale(1.1);
 }
 
-/***********************************************************************/
-/*PAGE 2*/
+/*Titre du lien : mon portfolio*/
+.monPortfolio {
+    display: flex;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Underline", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(252, 232, 251, 0.7);
+    padding: 10px 10px;
+    width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    /*enlèvement du soulignement*/
+}
 
-/* Section avec les projets */
+/*Sous-titre pour : Conceptrice et Développeuse d'Applications + Mes projets en groupe*/
+.group {
+    display: block;
+    /* prendre toute la largeur */
+    width: 100%;
+    text-align: center;
+    /* centrer le texte */
+    font-size: 2rem;
+    font-family: "Poiret One", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    /*espace haut*/
+    margin-bottom: 4rem;
+    /*espace en bas*/
+}
+
+/*Libellule*/
+.dragonfly {
+    position: absolute;
+    bottom: 36rem;
+    width: 100px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+    left: 65%;
+    display: flex;
+}
+
+/***************************************************/
+/*PAGE 2:: MES PROJETS*/
+
+/*Bouton accueil*/
+.homeBtn {
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(252, 232, 251);
+    cursor: pointer;
+    z-index: 2;
+    display: inline-block;
+    font-weight: 400;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+/*animation souris*/
+.homeBtn:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+/*Titre : Mes Projets*/
+.myProjects {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    flex: 2;
+    font-family: "Montserrat Underline", sans-serif;
+    font-size: 3rem;
+    text-shadow: 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Titre : mes projets personnels*/
+.solo {
+    font-family: "Poiret One", sans-serif;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/*Entre chaque photo*/
+.underPic {
+    flex: 1;
+    /*pour ajouter de l'espace*/
+}
+
+/*titre de mes projets*/
+.projectTitle {
+    font-family: "Montserrat Underline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(29, 90, 86, 0.9);
+    justify-content: center;
+    display: flex;
+    font-size: 1.45rem;
+    margin-bottom: 5rem;
+}
+
+/*Alignement de mes projets : centrage*/
 .projects {
     display: flex;
     flex-wrap: wrap;
+    /*éléments peuvent être affichés sur plusieurs lignes*/
     justify-content: center;
     padding-top: 0;
     padding-bottom: 20px;
 }
 
-/* Style de chaque projet */
+/*Emplacement de chaque projet*/
 .aloneProject,
 .groupProject {
     margin: 1rem;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
-    /*fluidité du hover*/
     width: 280px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+    /*fluidité du hover*/
 }
 
 .aloneProject:hover,
@@ -385,7 +309,7 @@ h1 {
     transform: scale(1.05);
 }
 
-/*Police et couleur des liens Github et gitlab*/
+/*Police et couleur des liens Github et gitlab de mes projets*/
 .aloneProject .links a,
 .groupProject .links a {
     font-family: 'Montserrat', sans-serif;
@@ -396,28 +320,24 @@ h1 {
     transition: color 0.3s;
 }
 
-.aloneProject .links a:hover {
-    color: rgba(88, 132, 157, 0.9);
+/*effets liens alone et group projects*/
+.aloneProject .links a:hover,
+.groupProject .links a:hover {
+    color: rgb(158, 113, 156);
 }
 
+/*Couleurs encadré Projets en autonomie*/
 .aloneProject {
     background-color: white;
 }
 
+/*Couleurs encadré Projets en groupe*/
 .groupProject {
-    margin-top: 0;
-    /* on veut que la marge vienne seulement du titre */
-    clear: both;
-    /* s’assure qu’aucun float ne gêne le positionnement */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
     background-color: rgba(252, 232, 251);
 }
 
 
-/* Si vous voulez ajouter des espaces ou ajuster la disposition des liens */
+/* Ajustement des espaces et disposition des liens*/
 .links {
     margin-top: 10px;
     display: flex;
@@ -425,73 +345,26 @@ h1 {
     gap: 15px;
 }
 
-.links a {
-    text-decoration: none;
-    color: #007bff;
-    /* Couleur des liens */
-    font-weight: bold;
-    /* Grasse pour les liens */
-}
-
-/*projets de groupe*/
-.groupProject:hover {
-    transform: scale(1.05);
-}
-
-.groupProject .links a:hover {
-    color: rgba(88, 132, 157, 0.9);
-}
-
-.boutton {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.boutton a img {
-    width: 30px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.boutton a img:hover {
-    transform: scale(1.1);
-}
-
-.img {
-    width: 30px;
-    height: auto;
-}
-
 /* Style pour les images dans les projets */
 .project-image img {
     max-width: 100%;
-    /* Limite la largeur maximale de l'image à 100% du conteneur */
+    /*Limite la largeur maximale de l'image au conteneur*/
     height: auto;
-    /* Garde le ratio de l'image */
     object-fit: contain;
-    /* L'image s'ajuste au conteneur sans le déformer */
-    max-width: 100%;
-    max-height: 200px;
-}
-
-/* Si vous avez besoin d'une taille de cadre spécifique pour vos images */
-.project-image {
+    /*image s'ajuste au conteneur sans le déformer*/
     width: 300px;
-    /* Définir la largeur du conteneur de l'image (à ajuster selon vos besoins) */
+    /*largeur du conteneur de l'image*/
     height: 200px;
-    /* Définir la hauteur du conteneur de l'image (à ajuster selon vos besoins) */
     overflow: hidden;
-    /* Cache les parties de l'image qui dépassent */
+    /*Cache les parties de l'image qui dépassent*/
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000000;
+    /*arrière plan des photos*/
 }
 
-/* DESIGN RESPONSIVE */
+/*DESIGN RESPONSIVE : MEDIAS QUERIES*/
 @media screen and (max-width: 600px) {
     .project-image img {
         max-width: 80%;
